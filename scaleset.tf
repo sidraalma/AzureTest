@@ -2,7 +2,7 @@ resource "azurerm_linux_virtual_machine" "vm1" {
   name                = "machine1"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
-  size                = "Standard_F2"
+  size                = "Standard_D2s_v3"
   admin_username      = "adminuser"
   network_interface_ids = [
     azurerm_network_interface.NetInt1.id,
@@ -21,7 +21,7 @@ resource "azurerm_linux_virtual_machine" "vm1" {
   source_image_reference {
     publisher = "Canonical"
     offer     = "UbuntuServer"
-    sku       = "16.04-LTS"
+    sku       = "20.04"
     version   = "latest"
   }
 }
