@@ -24,4 +24,10 @@ resource "azurerm_linux_virtual_machine" "vm1" {
     sku       = "wordpress-with-ubuntu-20-04-lts"
     version   = "latest"
   }
+  plan {
+    name      = "wordpress-with-ubuntu-20-04-lts"
+    publisher = "cognosys"
+    product   = "wordpress-with-ubuntu-20-04-lts"
+  }
+
 }
