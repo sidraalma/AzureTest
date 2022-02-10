@@ -19,9 +19,9 @@ resource "azurerm_linux_virtual_machine" "vm1" {
   }
 
   source_image_reference {
-    publisher = "Canonical"
-    offer     = "UbuntuServer"
-    sku       = "20.04-LTS"
+    publisher = "cognosys"
+    offer     = "wordpress-with-ubuntu-20-04-lts"
+    sku       = "wordpress-with-ubuntu-20-04-lts"
     version   = "latest"
   }
 }
