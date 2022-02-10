@@ -4,7 +4,7 @@ resource "azurerm_public_ip" "publicIP1" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   allocation_method   = "Static"
-#domain_name_label   = azurerm_resource_group.rg.name
+  #domain_name_label   = azurerm_resource_group.rg.name
 }
 
 resource "azurerm_public_ip" "publicIP2" {
@@ -12,7 +12,7 @@ resource "azurerm_public_ip" "publicIP2" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   allocation_method   = "Static"
- # domain_name_label   = azurerm_resource_group.rg.name
+  # domain_name_label   = azurerm_resource_group.rg.name
 }
 
 resource "azurerm_public_ip" "publicIP3" {
@@ -20,6 +20,6 @@ resource "azurerm_public_ip" "publicIP3" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   allocation_method   = "Static"
- # domain_name_label   = azurerm_resource_group.rg.name
+  # domain_name_label   = azurerm_resource_group.rg.name
 }
 
