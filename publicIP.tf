@@ -22,3 +22,4 @@ resource "azurerm_public_ip" "publicIP3" {
   allocation_method   = "Static"
  # domain_name_label   = azurerm_resource_group.rg.name
 }
+
